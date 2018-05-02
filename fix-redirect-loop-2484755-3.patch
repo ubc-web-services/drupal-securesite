@@ -11,7 +11,6 @@ Subject: [PATCH 1/6] Fixed coding standards violations.
  digest_md5/stored_passwords.php    |  31 +-
  securesite.admin.inc               | 154 +++++----
  securesite.inc                     |  45 ++-
- securesite.info                    |   1 -
  securesite.install                 |   2 +
  securesite.module                  |  36 +-
  securesite.test                    | 653 +++++++++++++++++++------------------
@@ -833,15 +832,6 @@ index 66a90e7..18bc786 100644
  function securesite_type_get() {
    $securesite_type = variable_get('securesite_type', array(SECURESITE_BASIC));
    return array_pop($securesite_type);
-diff --git a/securesite.info b/securesite.info
-index 49dc5f0..b2c6f6c 100644
---- a/securesite.info
-+++ b/securesite.info
-@@ -5,4 +5,3 @@ configure = admin/config/system/securesite
- 
- files[] = securesite.test
- files[] = securesite.inc
--
 diff --git a/securesite.install b/securesite.install
 index 26c03ce..a6be649 100644
 --- a/securesite.install
